@@ -34,7 +34,7 @@ bool areIntersect(line l1, line l2, point &p) {
   return true; }
  
 int main() {
-  input;
+  //input;
   int t;
   cin>>t;
   while(t--){
