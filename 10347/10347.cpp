@@ -9,7 +9,7 @@ using namespace std;
  
 string line;
 int main(void){
-  input;
+  //input;
     double m1,m2,m3;
     double sol,s;
     while(scanf("%lf %lf %lf",&m1,&m2,&m3)==3){
