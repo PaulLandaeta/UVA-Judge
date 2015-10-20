@@ -7,7 +7,7 @@ using namespace std;
 #define PI acos(-1.0)
 
 int main() {
-	input;
+	//input;
 	int t;
 	cin>>t;
 	while(t--){
