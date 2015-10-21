@@ -26,7 +26,7 @@ int main() {
 				cout<<"rectangle"<<endl;
 			}
 			else
-				if(v[3]<v[1]+v[2]+v[0] )
+				if(v[3]<v[1]+v[2]+v[0])
 					cout<<"quadrangle"<<endl;
 				else
 					cout<<"banana"<<endl;
