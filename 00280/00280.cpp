@@ -10,14 +10,13 @@ void dfs(int ini){
 	vis[ini]++;
 	for (int i = 0; i < grafo[ini].size(); ++i)
 	{
-		if(grafo[ini][i]==ini)
-			vis[ini]++;
+		
 		if(!vis[grafo[ini][i]])
 			dfs(grafo[ini][i]);
 	}
 }
 int main() {
-	input;
+//	input;
 	while(cin>>n && n){
 		cin.ignore();
 		string line;
@@ -40,10 +39,12 @@ int main() {
 		{
 			int v;
 			ss>>v;
+			
 			for (int j = 0; j < 110; ++j)
 			{
 				vis[j]=0;
 			}
+			vis[v]=-1;
 			dfs(v);
 			std::vector<int> novisit;
 			for (int j = 1; j <= n; ++j)
@@ -51,8 +52,10 @@ int main() {
 				if(!vis[j])
 					novisit.push_back(j);
 			}
-
-			cout<<novisit.size()<<" ";
+			if(novisit.size()==0)
+				cout<<novisit.size();
+			else
+				cout<<novisit.size()<<" ";
 			for (int j = 0; j < (int)novisit.size()-1; ++j)
 			{
 				cout<<novisit[j]<<" ";
@@ -68,6 +71,3 @@ int main() {
 	}
 	return 0;
 }
-
-
-    
