@@ -40,15 +40,15 @@ int circumCircle(point p1, point p2, point p3, point &ctr, double &r){
 
   ctr.x = (d*e - b*f) / g;
   ctr.y = (a*f - c*e) / g;
-  r = dist(p1, ctr);  
+  r = dist(p1, ctr);
   return 1; }
 int main() {
-	//input;
+	input;
 	point p1,p2,p3;
 
 	while(cin>>p1.x>>p1.y){
-		cin>>p2.x>>p2.y;	
-		cin>>p3.x>>p3.y;	
+		cin>>p2.x>>p2.y;
+		cin>>p3.x>>p3.y;
 		point c(0,0);
 		double radio;
 		circumCircle(p1,p2,p3,c,radio);
